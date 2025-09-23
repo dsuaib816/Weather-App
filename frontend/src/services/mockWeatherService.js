@@ -2,6 +2,7 @@
 const mockWeatherData = {
   'new york': {
     name: 'New York',
+    state: 'New York',
     main: {
       temp: 22,
       feels_like: 24,
@@ -25,6 +26,7 @@ const mockWeatherData = {
   },
   'london': {
     name: 'London',
+    state: 'United Kingdom',
     main: {
       temp: 15,
       feels_like: 13,
@@ -48,6 +50,7 @@ const mockWeatherData = {
   },
   'tokyo': {
     name: 'Tokyo',
+    state: 'Japan',
     main: {
       temp: 28,
       feels_like: 31,
@@ -71,6 +74,7 @@ const mockWeatherData = {
   },
   'sydney': {
     name: 'Sydney',
+    state: 'Australia',
     main: {
       temp: 19,
       feels_like: 18,
@@ -94,6 +98,7 @@ const mockWeatherData = {
   },
   'paris': {
     name: 'Paris',
+    state: 'France',
     main: {
       temp: 17,
       feels_like: 16,
@@ -117,6 +122,7 @@ const mockWeatherData = {
   },
   'dubai': {
     name: 'Dubai',
+    state: 'United Arab Emirates',
     main: {
       temp: 35,
       feels_like: 42,
@@ -141,6 +147,7 @@ const mockWeatherData = {
   // Virginia Cities
   'richmond': {
     name: 'Richmond',
+    state: 'Virginia',
     main: {
       temp: 24,
       feels_like: 26,
@@ -164,6 +171,7 @@ const mockWeatherData = {
   },
   'virginia beach': {
     name: 'Virginia Beach',
+    state: 'Virginia',
     main: {
       temp: 26,
       feels_like: 29,
@@ -187,6 +195,7 @@ const mockWeatherData = {
   },
   'norfolk': {
     name: 'Norfolk',
+    state: 'Virginia',
     main: {
       temp: 25,
       feels_like: 27,
@@ -210,6 +219,7 @@ const mockWeatherData = {
   },
   'chesapeake': {
     name: 'Chesapeake',
+    state: 'Virginia',
     main: {
       temp: 23,
       feels_like: 25,
@@ -233,6 +243,7 @@ const mockWeatherData = {
   },
   'alexandria': {
     name: 'Alexandria',
+    state: 'Virginia',
     main: {
       temp: 21,
       feels_like: 23,
@@ -256,6 +267,7 @@ const mockWeatherData = {
   },
   'arlington': {
     name: 'Arlington',
+    state: 'Virginia',
     main: {
       temp: 22,
       feels_like: 24,
@@ -279,6 +291,7 @@ const mockWeatherData = {
   },
   'fairfax': {
     name: 'Fairfax',
+    state: 'Virginia',
     main: {
       temp: 20,
       feels_like: 22,
@@ -302,6 +315,7 @@ const mockWeatherData = {
   },
   'herndon': {
     name: 'Herndon',
+    state: 'Virginia',
     main: {
       temp: 19,
       feels_like: 21,
@@ -325,6 +339,7 @@ const mockWeatherData = {
   },
   'reston': {
     name: 'Reston',
+    state: 'Virginia',
     main: {
       temp: 20,
       feels_like: 22,
@@ -348,6 +363,7 @@ const mockWeatherData = {
   },
   'falls church': {
     name: 'Falls Church',
+    state: 'Virginia',
     main: {
       temp: 21,
       feels_like: 23,
@@ -372,6 +388,7 @@ const mockWeatherData = {
   // Maryland Cities
   'baltimore': {
     name: 'Baltimore',
+    state: 'Maryland',
     main: {
       temp: 20,
       feels_like: 22,
@@ -395,6 +412,7 @@ const mockWeatherData = {
   },
   'annapolis': {
     name: 'Annapolis',
+    state: 'Maryland',
     main: {
       temp: 22,
       feels_like: 24,
@@ -418,6 +436,7 @@ const mockWeatherData = {
   },
   'silver spring': {
     name: 'Silver Spring',
+    state: 'Maryland',
     main: {
       temp: 19,
       feels_like: 21,
@@ -441,6 +460,7 @@ const mockWeatherData = {
   },
   'rockville': {
     name: 'Rockville',
+    state: 'Maryland',
     main: {
       temp: 18,
       feels_like: 20,
@@ -464,6 +484,7 @@ const mockWeatherData = {
   },
   'bethesda': {
     name: 'Bethesda',
+    state: 'Maryland',
     main: {
       temp: 20,
       feels_like: 22,
@@ -487,6 +508,7 @@ const mockWeatherData = {
   },
   'wheaton': {
     name: 'Wheaton',
+    state: 'Maryland',
     main: {
       temp: 19,
       feels_like: 21,
@@ -511,6 +533,7 @@ const mockWeatherData = {
   // Washington DC
   'washington': {
     name: 'Washington',
+    state: 'District of Columbia',
     main: {
       temp: 21,
       feels_like: 23,
@@ -534,6 +557,7 @@ const mockWeatherData = {
   },
   'washington dc': {
     name: 'Washington DC',
+    state: 'District of Columbia',
     main: {
       temp: 21,
       feels_like: 23,
@@ -558,6 +582,7 @@ const mockWeatherData = {
   // California Cities
   'los angeles': {
     name: 'Los Angeles',
+    state: 'California',
     main: {
       temp: 27,
       feels_like: 30,
@@ -581,6 +606,7 @@ const mockWeatherData = {
   },
   'san francisco': {
     name: 'San Francisco',
+    state: 'California',
     main: {
       temp: 18,
       feels_like: 19,
@@ -604,6 +630,7 @@ const mockWeatherData = {
   },
   'san diego': {
     name: 'San Diego',
+    state: 'California',
     main: {
       temp: 24,
       feels_like: 26,
@@ -627,6 +654,7 @@ const mockWeatherData = {
   },
   'sacramento': {
     name: 'Sacramento',
+    state: 'California',
     main: {
       temp: 29,
       feels_like: 32,
@@ -650,6 +678,7 @@ const mockWeatherData = {
   },
   'fresno': {
     name: 'Fresno',
+    state: 'California',
     main: {
       temp: 32,
       feels_like: 35,
@@ -673,6 +702,7 @@ const mockWeatherData = {
   },
   'oakland': {
     name: 'Oakland',
+    state: 'California',
     main: {
       temp: 20,
       feels_like: 21,
@@ -699,6 +729,7 @@ const mockWeatherData = {
 // Mock geolocation data (returns New York as default location)
 const mockLocationWeather = {
   name: 'Current Location',
+  state: 'New York',
   main: {
     temp: 20,
     feels_like: 22,

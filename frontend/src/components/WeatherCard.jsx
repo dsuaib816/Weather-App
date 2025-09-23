@@ -4,6 +4,8 @@ function WeatherCard({ weather, city }) {
   if (!weather) return null
 
   const {
+    name,
+    state,
     main: { temp, feels_like, humidity, pressure },
     weather: [{ main: weatherMain, description, icon }],
     wind: { speed },
@@ -22,10 +24,18 @@ function WeatherCard({ weather, city }) {
     return `https://openweathermap.org/img/wn/${iconCode}@2x.png`
   }
 
+  const getLocationDisplay = () => {
+    if (country === 'US') {
+      return `${name}, ${state}`
+    } else {
+      return `${name}, ${state}`
+    }
+  }
+
   return (
     <div className="weather-card">
       <div className="weather-header">
-        <h2>{city}, {country}</h2>
+        <h2>{getLocationDisplay()}</h2>
         <div className="weather-main">
           <img 
             src={getWeatherIcon(icon)} 
