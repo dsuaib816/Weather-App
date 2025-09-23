@@ -1,27 +1,14 @@
 services:
   weather-app:
     build:
-      context: ./react
-      dockerfile: Dockerfile
-    ports:
-      - "3000:80"
-    container_name: weather-app-container
-    restart: unless-stopped
-    environment:
-      - NODE_ENV=production
-
-  # Optional: Add a development service
-  weather-app-dev:
-    build:
-      context: ./react
+      context: ./frontend
       dockerfile: Dockerfile.dev
     ports:
       - "5173:5173"
-    container_name: weather-app-dev-container
+    container_name: weather-app-container
     volumes:
-      - ./react:/app
+      - ./frontend:/app
       - /app/node_modules
     environment:
       - NODE_ENV=development
-    profiles:
-      - dev
+    restart: unless-stopped
