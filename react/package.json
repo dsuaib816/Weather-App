@@ -1,13 +1,16 @@
 {
-  "name": "react",
+  "name": "weather-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A modern weather application built with React and Vite",
+  "keywords": ["weather", "react", "vite", "javascript"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",
