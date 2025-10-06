@@ -30,13 +30,7 @@ docker-compose up weather-app
 
 ## Usage
 
-- **Search by city**: Enter a city name in the search bar and press Enter or click the search button
-- **Current location**: Click the "📍 Use Current Location" button to get weather for your current position
-- **Weather details**: View comprehensive weather information including temperature, humidity, wind speed, pressure, visibility, sunrise, and sunset times
-
-## API
-
-This app uses the OpenWeatherMap API to fetch weather data. You'll need a free API key from [OpenWeatherMap](https://openweathermap.org/api).
+Enter a city name in the search bar to view weather information. The app includes mock data for popular cities worldwide including New York, London, Tokyo, Paris, Sydney, and more.
 
 ## Technologies Used
 
