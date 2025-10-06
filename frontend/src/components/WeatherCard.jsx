@@ -25,10 +25,12 @@ function WeatherCard({ weather, city }) {
   }
 
   const getLocationDisplay = () => {
-    if (country === 'US') {
+    if (country === 'US' && state) {
       return `${name}, ${state}`
+    } else if (country && country !== 'US') {
+      return `${name}, ${country}`
     } else {
-      return `${name}, ${state}`
+      return name
     }
   }
 
@@ -83,6 +85,11 @@ function WeatherCard({ weather, city }) {
         <div className="detail-item">
           <span className="label">Sunset</span>
           <span className="value">{formatTime(sunset)}</span>
+        </div>
+        
+        <div className="detail-item">
+          <span className="label">UV Index</span>
+          <span className="value">{weather.uvi || 'N/A'}</span>
         </div>
       </div>
     </div>
